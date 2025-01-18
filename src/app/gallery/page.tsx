@@ -79,7 +79,7 @@ const handlePrevious = (e: React.MouseEvent) => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 className="relative max-w-5xl w-full h-[80vh] flex items-center justify-center"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
               >
                 <motion.img
                   key={selectedImage.src}
