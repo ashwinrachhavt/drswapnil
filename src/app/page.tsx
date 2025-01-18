@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { CopilotPopup } from "@copilotkit/react-ui";
 import About from "@/app/about/page";
 import Services from "@/app/services/page";
 import Gallery from "@/app/gallery/page";
@@ -12,7 +13,13 @@ import Contact from "@/app/contact/page";
 export default function Home() {
   return (
     <main className="bg-gray-900 text-white">
-      {/* Hero Section */}
+      <CopilotPopup
+        instructions="You are assisting the user as best as you can. Answer in the best way possible given the data you have."
+        labels={{
+          title: "Popup Assistant",
+          initial: "Need any help?",
+        }}
+      />
       <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 to-gray-800 text-gray-100">
         <div className="flex items-center justify-center mb-4">
           <Avatar className="mr-4">
