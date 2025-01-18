@@ -15,7 +15,7 @@ const Gallery = () => {
     alt: `Dental clinic image ${i + 1}`,
   }));
 
-  const handleNext = (e: React.MouseEvent) => {
+  const handleNext = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     const nextIndex = (selectedIndex + 1) % images.length;
     setSelectedIndex(nextIndex);
@@ -23,7 +23,7 @@ const Gallery = () => {
   };
 
 
-const handlePrevious = (e: React.MouseEvent) => {
+const handlePrevious = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     const prevIndex = selectedIndex === 0 ? images.length - 1 : selectedIndex - 1;
     setSelectedIndex(prevIndex);
@@ -79,7 +79,7 @@ const handlePrevious = (e: React.MouseEvent) => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 className="relative max-w-5xl w-full h-[80vh] flex items-center justify-center"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
               >
                 <motion.img
                   key={selectedImage.src}
