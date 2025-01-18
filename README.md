@@ -1,2 +1,3 @@
 # drswapnil
-Portfolio Website for Dr. Swapnil Rachha
+
+This website is an AI based website of Dr. Swapnil Rachha.
