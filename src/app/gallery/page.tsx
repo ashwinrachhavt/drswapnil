@@ -15,7 +15,7 @@ const Gallery = () => {
     alt: `Dental clinic image ${i + 1}`,
   }));
 
-  const handleNext = (e: React.MouseEvent) => {
+  const handleNext = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     const nextIndex = (selectedIndex + 1) % images.length;
     setSelectedIndex(nextIndex);
@@ -23,7 +23,7 @@ const Gallery = () => {
   };
 
 
-const handlePrevious = (e: React.MouseEvent) => {
+const handlePrevious = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     const prevIndex = selectedIndex === 0 ? images.length - 1 : selectedIndex - 1;
     setSelectedIndex(prevIndex);
