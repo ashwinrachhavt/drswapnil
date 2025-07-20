@@ -1,9 +1,4 @@
-import dynamic from "next/dynamic";
-
-const ElegantHeroSection = dynamic(
-  () => import("@/components/sections/ElegantHeroSection"),
-  { ssr: false }
-);
+import ElegantHeroSection from "@/components/sections/ElegantHeroSectionClient";
 import { ElegantAboutSection } from "@/components/sections/ElegantAboutSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { GallerySection } from "@/components/sections/GallerySection";
