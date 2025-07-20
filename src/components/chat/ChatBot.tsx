@@ -296,7 +296,7 @@ export function ChatBot() {
               {!isMinimized && (
                 <CardContent className="p-0 flex flex-col h-[536px]">
                   {/* Messages Area */}
-                  <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-cream/50">
+                  <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
                     {/* API Status Indicator */}
                     {!apiAvailable && (
                       <motion.div

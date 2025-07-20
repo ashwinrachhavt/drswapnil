@@ -11,16 +11,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Elegant Color Palette
-        navy: '#1B2951',
-        'warm-gold': '#C9A96E',
-        'sage-green': '#7A9A7C',
-        cream: '#F8F6F0',
-        'warm-gray': '#6B7280',
-        charcoal: '#374151',
-        'soft-white': '#FEFEFE',
-        'light-gold': '#F4F1E8',
-        'deep-sage': '#5A7A5C',
+        // Modern Soulful Dental Care Color Palette
+        'primary-blue': '#0891b2',
+        'primary-pink': '#ec4899',
+        'secondary-blue': '#0ea5e9',
+        'secondary-pink': '#f472b6',
+        'accent-teal': '#06b6d4',
+        'accent-purple': '#a855f7',
+        'dark-blue': '#0c4a6e',
+        'dark-pink': '#be185d',
+        'light-blue': '#e0f2fe',
+        'light-pink': '#fce7f3',
         
         // Semantic Colors
         border: 'hsl(var(--border))',
@@ -83,11 +84,12 @@ export default {
         '128': '32rem',
       },
       boxShadow: {
-        'elegant': '0 4px 24px rgba(27, 41, 81, 0.08)',
-        'luxury': '0 8px 40px rgba(27, 41, 81, 0.12)',
-        'premium': '0 12px 60px rgba(27, 41, 81, 0.15)',
-        'soft': '0 2px 8px rgba(201, 169, 110, 0.15)',
-        'glow': '0 0 20px rgba(201, 169, 110, 0.4)',
+        'modern': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'modern-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        'blue': '0 4px 24px rgba(8, 145, 178, 0.15)',
+        'pink': '0 4px 24px rgba(236, 72, 153, 0.15)',
+        'teal': '0 4px 24px rgba(6, 182, 212, 0.15)',
+        'purple': '0 4px 24px rgba(168, 85, 247, 0.15)',
       },
       animation: {
         'float-elegant': 'float-elegant 6s ease-in-out infinite',
@@ -162,12 +164,12 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-elegant': 'linear-gradient(135deg, #F8F6F0 0%, #FFFFFF 100%)',
-        'gradient-gold': 'linear-gradient(135deg, #C9A96E 0%, #E8D5A3 100%)',
-        'gradient-sage': 'linear-gradient(135deg, #7A9A7C 0%, #A4C4A6 100%)',
-        'gradient-navy': 'linear-gradient(135deg, #1B2951 0%, #2A3A65 100%)',
-        'sophisticated-gradient': 'linear-gradient(135deg, #1B2951 0%, #5A7A5C 50%, #C9A96E 100%)',
-        'elegant-overlay': 'linear-gradient(135deg, rgba(27, 41, 81, 0.9) 0%, rgba(122, 154, 124, 0.8) 50%, rgba(201, 169, 110, 0.9) 100%)',
+        'gradient-blue-pink': 'linear-gradient(135deg, #0891b2 0%, #ec4899 100%)',
+        'gradient-teal-purple': 'linear-gradient(135deg, #06b6d4 0%, #a855f7 100%)',
+        'gradient-light-blue': 'linear-gradient(135deg, #e0f2fe 0%, #fce7f3 100%)',
+        'gradient-modern': 'linear-gradient(135deg, #f8fafc 0%, #ffffff 100%)',
+        'hero-overlay': 'linear-gradient(135deg, rgba(8, 145, 178, 0.9) 0%, rgba(236, 72, 153, 0.9) 100%)',
+        'section-overlay': 'linear-gradient(135deg, rgba(224, 242, 254, 0.8) 0%, rgba(252, 231, 243, 0.8) 100%)',
       },
       backdropBlur: {
         'xs': '2px',
@@ -180,8 +182,8 @@ export default {
         DEFAULT: {
           css: {
             maxWidth: 'none',
-            color: '#374151',
-            lineHeight: '1.7',
+            color: '#334155',
+            lineHeight: '1.6',
             p: {
               marginTop: '1.25em',
               marginBottom: '1.25em',
@@ -189,34 +191,34 @@ export default {
             h1: {
               fontFamily: 'Playfair Display, serif',
               fontWeight: '600',
-              color: '#1B2951',
+              color: '#0c4a6e',
             },
             h2: {
               fontFamily: 'Playfair Display, serif',
               fontWeight: '600',
-              color: '#1B2951',
+              color: '#0c4a6e',
             },
             h3: {
               fontFamily: 'Playfair Display, serif',
               fontWeight: '500',
-              color: '#1B2951',
+              color: '#0c4a6e',
             },
             blockquote: {
               fontFamily: 'Crimson Text, serif',
               fontStyle: 'italic',
-              borderLeftColor: '#C9A96E',
-              color: '#374151',
+              borderLeftColor: '#ec4899',
+              color: '#334155',
             },
             strong: {
-              color: '#1B2951',
+              color: '#0c4a6e',
               fontWeight: '600',
             },
             a: {
-              color: '#C9A96E',
+              color: '#0891b2',
               textDecoration: 'none',
               fontWeight: '500',
               '&:hover': {
-                color: '#B8956A',
+                color: '#ec4899',
                 textDecoration: 'underline',
               },
             },

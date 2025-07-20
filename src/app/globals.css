@@ -6,65 +6,78 @@
 
 @layer base {
   :root {
-    /* Elegant Color Palette */
-    --navy: #1B2951;
-    --warm-gold: #C9A96E;
-    --sage-green: #7A9A7C;
-    --cream: #F8F6F0;
-    --warm-gray: #6B7280;
-    --charcoal: #374151;
-    --soft-white: #FEFEFE;
-    --light-gold: #F4F1E8;
-    --deep-sage: #5A7A5C;
+    /* Modern Soulful Dental Care Theme */
+    --primary-blue: #0891b2;
+    --primary-pink: #ec4899;
+    --secondary-blue: #0ea5e9;
+    --secondary-pink: #f472b6;
+    --accent-teal: #06b6d4;
+    --accent-purple: #a855f7;
+    --dark-blue: #0c4a6e;
+    --dark-pink: #be185d;
+    --light-blue: #e0f2fe;
+    --light-pink: #fce7f3;
+    --neutral-50: #f8fafc;
+    --neutral-100: #f1f5f9;
+    --neutral-200: #e2e8f0;
+    --neutral-300: #cbd5e1;
+    --neutral-600: #475569;
+    --neutral-700: #334155;
+    --neutral-800: #1e293b;
+    --neutral-900: #0f172a;
     
-    /* Refined Shadows */
-    --shadow-elegant: 0 4px 24px rgba(27, 41, 81, 0.08);
-    --shadow-luxury: 0 8px 40px rgba(27, 41, 81, 0.12);
-    --shadow-premium: 0 12px 60px rgba(27, 41, 81, 0.15);
+    /* Modern Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-blue: 0 10px 15px -3px rgb(8 145 178 / 0.1), 0 4px 6px -4px rgb(8 145 178 / 0.1);
+    --shadow-pink: 0 10px 15px -3px rgb(236 72 153 / 0.1), 0 4px 6px -4px rgb(236 72 153 / 0.1);
     
-    /* shadcn/ui CSS variables */
-    --background: 248 246 240;
-    --foreground: 55 65 81;
-    --card: 254 254 254;
-    --card-foreground: 55 65 81;
-    --popover: 254 254 254;
-    --popover-foreground: 55 65 81;
-    --primary: 27 41 81;
-    --primary-foreground: 254 254 254;
-    --secondary: 244 241 232;
-    --secondary-foreground: 55 65 81;
-    --muted: 244 241 232;
-    --muted-foreground: 107 114 128;
-    --accent: 201 169 110;
-    --accent-foreground: 254 254 254;
+    /* shadcn/ui CSS variables - Modern Theme */
+    --background: 248 250 252;
+    --foreground: 15 23 42;
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+    --primary: 8 145 178;
+    --primary-foreground: 248 250 252;
+    --secondary: 241 245 249;
+    --secondary-foreground: 15 23 42;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --accent: 236 72 153;
+    --accent-foreground: 248 250 252;
     --destructive: 239 68 68;
-    --destructive-foreground: 254 254 254;
-    --border: 201 169 110;
-    --input: 201 169 110;
-    --ring: 201 169 110;
+    --destructive-foreground: 248 250 252;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 8 145 178;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 27 41 81;
-    --foreground: 248 246 240;
-    --card: 27 41 81;
-    --card-foreground: 248 246 240;
-    --popover: 27 41 81;
-    --popover-foreground: 248 246 240;
-    --primary: 201 169 110;
-    --primary-foreground: 27 41 81;
-    --secondary: 55 65 81;
-    --secondary-foreground: 248 246 240;
-    --muted: 55 65 81;
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+    --card: 30 41 59;
+    --card-foreground: 248 250 252;
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+    --primary: 14 165 233;
+    --primary-foreground: 15 23 42;
+    --secondary: 51 65 85;
+    --secondary-foreground: 248 250 252;
+    --muted: 51 65 85;
     --muted-foreground: 148 163 184;
-    --accent: 122 154 124;
-    --accent-foreground: 248 246 240;
+    --accent: 244 114 182;
+    --accent-foreground: 15 23 42;
     --destructive: 239 68 68;
-    --destructive-foreground: 248 246 240;
-    --border: 55 65 81;
-    --input: 55 65 81;
-    --ring: 201 169 110;
+    --destructive-foreground: 248 250 252;
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 14 165 233;
   }
 }
 
@@ -79,29 +92,30 @@
   }
   
   body {
-    @apply bg-cream text-charcoal;
+    background-color: var(--neutral-50);
+    color: var(--neutral-900);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.7;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
   
   ::-webkit-scrollbar-track {
-    background: var(--cream);
+    background: var(--neutral-100);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: var(--warm-gold);
-    border-radius: 4px;
+    background: var(--primary-blue);
+    border-radius: 3px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #B8956A;
+    background: var(--dark-blue);
   }
 }
 
@@ -120,16 +134,16 @@
     font-family: 'Crimson Text', serif;
   }
   
-  /* Elegant Text Styles */
-  .text-elegant {
-    background: linear-gradient(135deg, #C9A96E 0%, #E8D5A3 100%);
+  /* Modern Text Styles */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .text-sophisticated {
-    color: var(--navy);
+    color: var(--neutral-700);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
   
@@ -142,34 +156,34 @@
     @apply py-20 lg:py-28;
   }
   
-  /* Card Styles */
+  /* Modern Card Styles */
   .elegant-card {
-    background: var(--soft-white);
-    border: 1px solid rgba(201, 169, 110, 0.1);
-    border-radius: 16px;
-    box-shadow: var(--shadow-elegant);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    border: 1px solid var(--neutral-200);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .elegant-card:hover {
-    box-shadow: var(--shadow-luxury);
-    transform: translateY(-4px);
-    border-color: rgba(201, 169, 110, 0.2);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    border-color: var(--neutral-300);
   }
   
   .luxury-card {
-    background: linear-gradient(135deg, #F8F6F0 0%, #FFFFFF 100%);
-    border: 1px solid rgba(201, 169, 110, 0.15);
-    border-radius: 20px;
-    box-shadow: var(--shadow-luxury);
+    background: white;
+    border: 1px solid var(--neutral-200);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
     backdrop-filter: blur(10px);
   }
   
   .premium-card {
-    background: var(--soft-white);
-    border: 2px solid var(--warm-gold);
-    border-radius: 24px;
-    box-shadow: var(--shadow-premium);
+    background: white;
+    border: 2px solid var(--primary-pink);
+    border-radius: 16px;
+    box-shadow: var(--shadow-pink);
     position: relative;
     overflow: hidden;
   }
@@ -180,67 +194,69 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(135deg, #C9A96E 0%, #E8D5A3 100%);
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%);
   }
   
-  /* Button Styles */
-  .btn-elegant {
-    background: linear-gradient(135deg, #C9A96E 0%, #E8D5A3 100%);
+  /* Modern Button Styles */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%);
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     color: white;
     font-weight: 600;
-    padding: 12px 32px;
-    box-shadow: var(--shadow-elegant);
-    transition: all 0.3s ease;
+    font-size: 14px;
+    padding: 12px 24px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
   }
   
-  .btn-elegant:hover {
-    box-shadow: var(--shadow-luxury);
-    transform: translateY(-2px);
+  .btn-primary:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-1px);
     color: white;
   }
   
-  .btn-elegant::before {
+  .btn-primary::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s ease;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.4s ease;
   }
   
-  .btn-elegant:hover::before {
+  .btn-primary:hover::before {
     left: 100%;
   }
   
-  .btn-outline-elegant {
+  .btn-outline {
     background: transparent;
-    border: 2px solid var(--warm-gold);
-    border-radius: 50px;
-    color: var(--warm-gold);
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    color: var(--primary-blue);
     font-weight: 600;
-    padding: 10px 30px;
-    transition: all 0.3s ease;
+    font-size: 14px;
+    padding: 10px 22px;
+    transition: all 0.2s ease;
   }
   
-  .btn-outline-elegant:hover {
-    background: var(--warm-gold);
+  .btn-outline:hover {
+    background: var(--primary-blue);
     color: white;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-elegant);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
   }
   
   /* Navigation Styles */
   .elegant-nav {
-    background: rgba(248, 246, 240, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+    border-bottom: 1px solid var(--neutral-200);
   }
   
   /* Refined Animations */
@@ -271,9 +287,9 @@
     height: 1px;
     background: linear-gradient(90deg, 
       transparent 0%, 
-      var(--warm-gold) 50%, 
+      var(--neutral-300) 50%, 
       transparent 100%);
-    margin: 4rem 0;
+    margin: 3rem 0;
   }
   
   /* Responsive Typography */
@@ -308,6 +324,50 @@
   .body-small {
     @apply text-sm lg:text-base font-body leading-relaxed;
   }
+
+  /* Modern Theme Color Utilities */
+  .bg-primary-blue { background-color: var(--primary-blue); }
+  .bg-primary-pink { background-color: var(--primary-pink); }
+  .bg-secondary-blue { background-color: var(--secondary-blue); }
+  .bg-secondary-pink { background-color: var(--secondary-pink); }
+  .bg-accent-teal { background-color: var(--accent-teal); }
+  .bg-accent-purple { background-color: var(--accent-purple); }
+  .bg-light-blue { background-color: var(--light-blue); }
+  .bg-light-pink { background-color: var(--light-pink); }
+
+  .text-primary-blue { color: var(--primary-blue); }
+  .text-primary-pink { color: var(--primary-pink); }
+  .text-secondary-blue { color: var(--secondary-blue); }
+  .text-secondary-pink { color: var(--secondary-pink); }
+  .text-accent-teal { color: var(--accent-teal); }
+  .text-accent-purple { color: var(--accent-purple); }
+  .text-dark-blue { color: var(--dark-blue); }
+  .text-dark-pink { color: var(--dark-pink); }
+
+  .border-primary-blue { border-color: var(--primary-blue); }
+  .border-primary-pink { border-color: var(--primary-pink); }
+  .border-neutral-200 { border-color: var(--neutral-200); }
+
+  /* Modern Gradient Backgrounds */
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%);
+  }
+
+  .gradient-blue-pink {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%);
+  }
+
+  .gradient-teal-purple {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-purple) 100%);
+  }
+
+  /* Tailwind gradient utilities */
+  .from-primary-blue { --tw-gradient-from: var(--primary-blue); }
+  .from-primary-pink { --tw-gradient-from: var(--primary-pink); }
+  .to-primary-blue { --tw-gradient-to: var(--primary-blue); }
+  .to-primary-pink { --tw-gradient-to: var(--primary-pink); }
+  .from-accent-teal { --tw-gradient-from: var(--accent-teal); }
+  .to-accent-purple { --tw-gradient-to: var(--accent-purple); }
 }
 
 /* Reduced Motion */
