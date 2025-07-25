@@ -275,7 +275,7 @@ export function ChatBot() {
                     <div>
                       <CardTitle className="text-lg font-semibold">Dr. Rachha's Assistant</CardTitle>
                       <div className="flex items-center space-x-2 text-sm opacity-90">
-                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 bg-accent-teal rounded-full animate-pulse"></div>
                         <span>{apiAvailable && !error ? "AI Powered" : "Always Available"}</span>
                       </div>
                     </div>
@@ -302,9 +302,9 @@ export function ChatBot() {
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-center"
+                        className="bg-light-pink border border-secondary-pink/20 rounded-lg p-3 text-center"
                       >
-                        <div className="flex items-center justify-center space-x-2 text-yellow-700">
+                        <div className="flex items-center justify-center space-x-2 text-dark-pink">
                           <AlertCircle className="h-4 w-4" />
                           <span className="text-sm">Using offline responses</span>
                         </div>
@@ -481,7 +481,7 @@ export function ChatBot() {
                         {apiAvailable && !error ? (
                           <Badge className="bg-green-100 text-green-700 text-xs">AI Online</Badge>
                         ) : (
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs">Offline Mode</Badge>
+                          <Badge className="bg-light-pink text-dark-pink text-xs">Offline Mode</Badge>
                         )}
                       </div>
                     </div>

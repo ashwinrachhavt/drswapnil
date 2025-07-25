@@ -99,7 +99,7 @@ export function GallerySection() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 to-light-blue">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -133,7 +133,7 @@ export function GallerySection() {
               whileHover={{ scale: 1.05 }}
             >
               <Card className="medical-card text-center p-6 hover:shadow-lg transition-all duration-300">
-                <div className="bg-gradient-to-br from-blue-500 to-teal-500 rounded-full p-3 w-fit mx-auto mb-4">
+                <div className="bg-gradient-to-br from-primary-blue to-accent-teal rounded-full p-3 w-fit mx-auto mb-4">
                   <highlight.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -160,8 +160,8 @@ export function GallerySection() {
               variant={selectedCategory === category.id ? "default" : "outline"}
               className={`rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? "bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg"
-                  : "hover:bg-blue-50 hover:border-blue-200"
+                  ? "bg-gradient-to-r from-primary-blue to-accent-teal text-white shadow-lg"
+                  : "hover:bg-light-blue hover:border-secondary-blue/20"
               }`}
               onClick={() => setSelectedCategory(category.id)}
             >
@@ -227,7 +227,7 @@ export function GallerySection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <Card className="bg-gradient-to-r from-blue-600 to-teal-600 text-white overflow-hidden">
+          <Card className="bg-gradient-to-r from-primary-blue to-accent-teal text-white overflow-hidden">
             <CardContent className="p-8 lg:p-12 relative">
               <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-20 translate-x-20"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
@@ -245,7 +245,7 @@ export function GallerySection() {
                 <div className="flex flex-col sm:flex-row gap-4 lg:flex-shrink-0">
                   <Button 
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
+                    className="bg-white text-primary-blue hover:bg-gray-100 font-semibold"
                   >
                     <Play className="mr-2 h-5 w-5" />
                     Start Virtual Tour

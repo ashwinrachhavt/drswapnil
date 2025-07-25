@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ImageGridCarousel } from "@/components/ImageGridCarousel";
 import { 
   Camera, 
   Video, 
@@ -16,11 +17,6 @@ import {
   Sparkles,
   ArrowRight
 } from "lucide-react";
-import Image from "next/image";
-
-const galleryImages = [
-  "DSC (1).png", "DSC (2).png", "DSC (3).png", "DSC (4).png", "DSC (5).png", "DSC (6).png", "DSC (7).png", "DSC (8).png", "DSC (9).png", "DSC (10).png", "DSC (11).png", "DSC (12).png", "DSC (13).png", "DSC (14).png", "DSC (15).png", "DSC (16).png", "DSC (17).png", "DSC (18).png", "DSC (19).png", "DSC (20).png", "DSC (21).png", "DSC (22).png", "DSC (23).png", "DSC (24).png", "DSC (25).png", "DSC (26).png", "DSC (27).png", "DSC (28).png", "DSC (29).png", "DSC (30).png", "DSC (31).png", "DSC (32).png", "DSC (33).png", "DSC (34).png", "DSC (35).png", "DSC (36).png", "DSC (37).png", "DSC (38).png", "DSC (39).png", "DSC (40).png", "DSC (41).png", "DSC (42).png", "DSC (43).png", "DSC (44).png", "DSC (45).png"
-];
 
 const clinicFeatures = [
   {
@@ -44,6 +40,7 @@ const clinicFeatures = [
     description: "Relaxing atmosphere with modern amenities for patient comfort"
   }
 ];
+
 
 export function SoulfulGallerySection() {
   return (
@@ -70,34 +67,17 @@ export function SoulfulGallerySection() {
           </p>
         </motion.div>
 
-        {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {galleryImages.map((filename, index) => (
-            <motion.div
-              key={filename}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05, duration: 0.5 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <Card className="elegant-card h-full group hover:border-primary-blue overflow-hidden">
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-primary-blue to-primary-pink flex items-center justify-center">
-                    <Image
-                      src={`/soulfuldentalcare/${filename}`}
-                      alt={filename}
-                      width={400}
-                      height={300}
-                      className="object-cover w-full h-full rounded-xl transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+        {/* Interactive Gallery Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <ImageGridCarousel />
+        </motion.div>
+
 
         {/* Clinic Features */}
         <motion.div
