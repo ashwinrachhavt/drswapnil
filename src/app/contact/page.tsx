@@ -65,21 +65,21 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
               />
               <textarea
                 rows={4}
                 placeholder="Your Message"
-                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
               />
               <motion.button
                 type="submit"
-                className="relative inline-flex overflow-hidden rounded-full p-[0.1px] bg-gradient-to-r from-blue-500 to-purple-600 text-white py-1 px-12 shadow-lg focus:outline-none mx-auto"
+                className="relative inline-flex overflow-hidden rounded-full p-[0.1px] bg-gradient-to-r from-primary-blue to-primary-pink text-white py-1 px-12 shadow-lg focus:outline-none mx-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

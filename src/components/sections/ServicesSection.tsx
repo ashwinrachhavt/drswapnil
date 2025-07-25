@@ -20,7 +20,7 @@ const services = [
     title: "Preventive Care",
     description: "Comprehensive preventive treatments to maintain optimal oral health and prevent dental problems before they start.",
     features: ["Regular checkups", "Fluoride treatments", "Dental sealants", "Oral hygiene education"],
-    color: "from-green-500 to-emerald-500",
+    color: "from-accent-teal to-primary-blue",
     popular: false
   },
   {
@@ -36,7 +36,7 @@ const services = [
     title: "Cosmetic Dentistry",
     description: "Aesthetic treatments to enhance your child's smile and boost their confidence with safe, effective procedures.",
     features: ["Teeth whitening", "Veneers", "Bonding", "Smile makeovers"],
-    color: "from-yellow-500 to-orange-500",
+    color: "from-primary-pink to-secondary-pink",
     popular: false
   },
   {
@@ -44,7 +44,7 @@ const services = [
     title: "Oral Surgery",
     description: "Safe and comfortable surgical procedures performed with the highest standards of care and pain management.",
     features: ["Wisdom teeth removal", "Tooth extractions", "Minor surgeries", "Post-op care"],
-    color: "from-blue-500 to-cyan-500",
+    color: "from-primary-blue to-accent-teal",
     popular: false
   },
   {
@@ -52,7 +52,7 @@ const services = [
     title: "Orthodontics",
     description: "Modern orthodontic solutions including clear aligners and traditional braces to create perfect smiles.",
     features: ["Invisalign", "Traditional braces", "Retainers", "Bite correction"],
-    color: "from-teal-500 to-green-500",
+    color: "from-accent-teal to-secondary-blue",
     popular: false
   }
 ];
@@ -123,7 +123,7 @@ export function ServicesSection() {
               <Card className="medical-card h-full hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
                 {service.popular && (
                   <div className="absolute top-4 right-4 z-10">
-                    <Badge className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-0">
+                    <Badge className="bg-gradient-to-r from-primary-pink to-secondary-pink text-white border-0">
                       Most Popular
                     </Badge>
                   </div>
@@ -134,7 +134,7 @@ export function ServicesSection() {
                     <div className={`bg-gradient-to-br ${service.color} rounded-xl p-3 group-hover:scale-110 transition-transform duration-300`}>
                       <service.icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <CardTitle className="text-xl font-semibold text-gray-900 group-hover:text-primary-blue transition-colors">
                       {service.title}
                     </CardTitle>
                   </div>
@@ -153,14 +153,14 @@ export function ServicesSection() {
                         transition={{ delay: (index * 0.1) + (featureIndex * 0.05), duration: 0.4 }}
                         viewport={{ once: true }}
                       >
-                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-accent-teal flex-shrink-0" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </motion.div>
                     ))}
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full group-hover:bg-blue-50 group-hover:border-blue-200 transition-colors"
+                    className="w-full group-hover:bg-light-blue group-hover:border-secondary-blue/20 transition-colors"
                     onClick={scrollToContact}
                   >
                     Learn More
@@ -173,7 +173,7 @@ export function ServicesSection() {
         </div>
         {/* Special Features Section */}
         <motion.div
-          className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-3xl p-8 lg:p-12"
+          className="bg-gradient-to-br from-light-blue to-light-pink rounded-3xl p-8 lg:p-12"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -201,7 +201,7 @@ export function ServicesSection() {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="bg-gradient-to-br from-blue-500 to-teal-500 rounded-full p-4 w-fit mx-auto mb-4">
+                  <div className="bg-gradient-to-br from-primary-blue to-accent-teal rounded-full p-4 w-fit mx-auto mb-4">
                     <feature.icon className="h-8 w-8 text-white" />
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">
@@ -289,7 +289,7 @@ export function ServicesSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-primary-blue to-accent-teal hover:from-dark-blue hover:to-primary-blue text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={scrollToContact}
                 >
                   Book Appointment
@@ -306,17 +306,17 @@ export function ServicesSection() {
               </div>
               <div className="flex items-center justify-center space-x-6 mt-8 pt-8 border-t border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">5000+</div>
+                  <div className="text-2xl font-bold text-primary-blue">5000+</div>
                   <div className="text-gray-600 text-sm">Happy Patients</div>
                 </div>
                 <div className="w-px h-12 bg-gray-200"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">17+</div>
+                  <div className="text-2xl font-bold text-primary-blue">17+</div>
                   <div className="text-gray-600 text-sm">Years Experience</div>
                 </div>
                 <div className="w-px h-12 bg-gray-200"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">4.9★</div>
+                  <div className="text-2xl font-bold text-primary-pink">4.9★</div>
                   <div className="text-gray-600 text-sm">Patient Rating</div>
                 </div>
               </div>

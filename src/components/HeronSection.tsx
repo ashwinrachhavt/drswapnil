@@ -21,7 +21,7 @@ const HeronSection = () => {
           I am an enthusiastic Pediatric Dentist known for my diligent work in Pune, India. As the Founder & Chief Dental Surgeon at Soulful Dental Care, I am committed to providing the best dental care and honest treatment. My patients, especially children, appreciate my compassionate approach. I am also active in community welfare, working with underprivileged children.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <Button className="bg-blue-600 text-white px-6 py-3 rounded-md">
+          <Button className="bg-primary-blue text-white px-6 py-3 rounded-md">
             Book An Appointment
           </Button>
           <Button variant="outline" className="border-gray-800 text-gray-800 px-6 py-3 rounded-md">
@@ -49,9 +49,9 @@ const HeronSection = () => {
           <div className="bg-gray-100 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4 justify-center">
-              <a href="#" className="text-blue-600 hover:text-blue-800">Facebook</a>
-              <a href="#" className="text-pink-600 hover:text-pink-800">Instagram</a>
-              <a href="#" className="text-red-600 hover:text-red-800">YouTube</a>
+              <a href="#" className="text-primary-blue hover:text-dark-blue">Facebook</a>
+              <a href="#" className="text-primary-pink hover:text-dark-pink">Instagram</a>
+              <a href="#" className="text-accent-purple hover:text-dark-pink">YouTube</a>
             </div>
           </div>
         </motion.div>

@@ -405,7 +405,7 @@ export function SoulfulContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button 
-                  className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3"
+                  className="w-full bg-gradient-to-r from-accent-teal to-primary-blue hover:from-primary-blue hover:to-dark-blue text-white font-semibold py-3"
                   onClick={() => window.open('https://wa.me/919022920992', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />

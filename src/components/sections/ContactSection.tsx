@@ -20,7 +20,7 @@ const contactInfo = [
       "Karve Road, Kothrud, Pune 411038"
     ],
     action: "Get Directions",
-    color: "from-blue-500 to-blue-600"
+    color: "from-primary-blue to-dark-blue"
   },
   {
     icon: Phone,
@@ -31,7 +31,7 @@ const contactInfo = [
       "WhatsApp appointments available"
     ],
     action: "Call Now",
-    color: "from-green-500 to-green-600"
+    color: "from-accent-teal to-primary-blue"
   },
   {
     icon: Mail,
@@ -53,7 +53,7 @@ const contactInfo = [
       "Sunday: Closed (Emergency available)"
     ],
     action: "Book Appointment",
-    color: "from-orange-500 to-orange-600"
+    color: "from-primary-pink to-secondary-pink"
   }
 ];
 
@@ -162,7 +162,7 @@ export function ContactSection() {
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="w-full group-hover:bg-blue-50 group-hover:border-blue-200 transition-colors"
+                    className="w-full group-hover:bg-light-blue group-hover:border-secondary-blue/20 transition-colors"
                   >
                     {info.action}
                   </Button>
@@ -182,7 +182,7 @@ export function ContactSection() {
             <Card className="medical-card">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-900 flex items-center">
-                  <Calendar className="mr-3 h-6 w-6 text-blue-600" />
+                  <Calendar className="mr-3 h-6 w-6 text-primary-blue" />
                   Book an Appointment
                 </CardTitle>
                 <p className="text-gray-600">
@@ -203,7 +203,7 @@ export function ContactSection() {
                           onChange={handleInputChange}
                           placeholder="Your full name"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                         />
                       </div>
                       <div>
@@ -215,7 +215,7 @@ export function ContactSection() {
                           value={formData.childAge}
                           onChange={handleInputChange}
                           placeholder="e.g., 5 years"
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                         />
                       </div>
                     </div>
@@ -231,7 +231,7 @@ export function ContactSection() {
                           onChange={handleInputChange}
                           placeholder="your.email@example.com"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                         />
                       </div>
                       <div>
@@ -245,7 +245,7 @@ export function ContactSection() {
                           onChange={handleInputChange}
                           placeholder="+91 9876543210"
                           required
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                         />
                       </div>
                     </div>
@@ -257,7 +257,7 @@ export function ContactSection() {
                         name="appointmentType"
                         value={formData.appointmentType}
                         onChange={handleInputChange}
-                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-500 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-primary-blue focus:ring-primary-blue"
                       >
                         <option value="">Select appointment type</option>
                         {appointmentTypes.map(type => (
@@ -275,7 +275,7 @@ export function ContactSection() {
                           type="date"
                           value={formData.preferredDate}
                           onChange={handleInputChange}
-                          className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                          className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                         />
                       </div>
                       <div>
@@ -286,7 +286,7 @@ export function ContactSection() {
                           name="preferredTime"
                           value={formData.preferredTime}
                           onChange={handleInputChange}
-                          className="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-blue-500 focus:ring-blue-500"
+                          className="w-full border border-gray-300 rounded-md px-3 py-2 focus:border-primary-blue focus:ring-primary-blue"
                         >
                           <option value="">Select time</option>
                           <option value="9:00 AM">9:00 AM</option>
@@ -310,13 +310,13 @@ export function ContactSection() {
                         onChange={handleInputChange}
                         placeholder="Tell us about any specific concerns or requirements for your child..."
                         rows={4}
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        className="border-gray-300 focus:border-primary-blue focus:ring-primary-blue"
                       />
                     </div>
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="w-full bg-gradient-to-r from-primary-blue to-accent-teal hover:from-dark-blue hover:to-primary-blue text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       {isSubmitting ? (
                         <div className="flex items-center justify-center">
@@ -339,7 +339,7 @@ export function ContactSection() {
                     transition={{ duration: 0.6 }}
                   >
                     <div className="bg-green-100 rounded-full p-4 w-fit mx-auto mb-4">
-                      <CheckCircle className="h-12 w-12 text-green-600" />
+                      <CheckCircle className="h-12 w-12 text-accent-teal" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       Appointment Request Sent!
@@ -368,21 +368,21 @@ export function ContactSection() {
             <Card className="medical-card overflow-hidden">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                  <Navigation className="mr-3 h-5 w-5 text-blue-600" />
+                  <Navigation className="mr-3 h-5 w-5 text-primary-blue" />
                   Find Our Clinic
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <div className="aspect-video bg-gradient-to-br from-blue-100 to-teal-100 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <MapPin className="h-12 w-12 text-primary-blue mx-auto mb-4" />
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Interactive Map
                     </h3>
                     <p className="text-gray-600 mb-4">
                       Easily located in Kothrud, Pune with ample parking available
                     </p>
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button className="bg-primary-blue hover:bg-dark-blue text-white">
                       <Navigation className="mr-2 h-4 w-4" />
                       Get Directions
                     </Button>
@@ -394,7 +394,7 @@ export function ContactSection() {
             <Card className="medical-card">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                  <MessageCircle className="mr-3 h-5 w-5 text-blue-600" />
+                  <MessageCircle className="mr-3 h-5 w-5 text-primary-blue" />
                   Quick Contact
                 </CardTitle>
                 <p className="text-gray-600">
@@ -403,14 +403,14 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3"
+                  className="w-full bg-accent-teal hover:bg-primary-blue text-white font-semibold py-3"
                   onClick={() => window.open('https://wa.me/919022920992', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   WhatsApp Chat
                 </Button>
                 <Button 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3"
+                  className="w-full bg-primary-blue hover:bg-dark-blue text-white font-semibold py-3"
                   onClick={() => window.open('tel:+919022920992', '_blank')}
                 >
                   <Phone className="mr-2 h-5 w-5" />
@@ -457,7 +457,7 @@ export function ContactSection() {
                 <div className="text-center">
                   <div className="flex justify-center space-x-1 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="h-6 w-6 fill-primary-pink text-primary-pink" />
                     ))}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -467,7 +467,7 @@ export function ContactSection() {
                     "Dr. Rachha made my daughter's first dental visit so comfortable. 
                     She actually looks forward to her appointments now!"
                   </p>
-                  <p className="text-blue-600 font-medium text-sm">
+                  <p className="text-primary-blue font-medium text-sm">
                     - Parent Review
                   </p>
                 </div>
