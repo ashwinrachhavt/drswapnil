@@ -6,6 +6,7 @@ import { SoulfulGallerySection } from "@/components/sections/SoulfulGallerySecti
 import { SoulfulContactSection } from "@/components/sections/SoulfulContactSection";
 import { ChatBot } from "@/components/chat/ChatBot";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function Home() {
   return (
