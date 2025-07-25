@@ -5,11 +5,15 @@ import { SoulfulTestimonialsSection } from "@/components/sections/SoulfulTestimo
 import { SoulfulGallerySection } from "@/components/sections/SoulfulGallerySection";
 import { SoulfulContactSection } from "@/components/sections/SoulfulContactSection";
 import { ChatBot } from "@/components/chat/ChatBot";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <PinkBlueHeroSection />
+      <div className="my-12">
+         <YouTubeEmbed videoUrl="https://www.youtube.com/watch?v=toAsXFlxbPc" />
+      </div>
       <PinkBlueAboutSection />
       <SoulfulServicesSection />
       <SoulfulTestimonialsSection />
